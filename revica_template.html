@@ -14,6 +14,7 @@
     * {
       margin: 0;
       padding: 0;
+      font-size: 18px;
       box-sizing: border-box;
     }
 
@@ -24,28 +25,20 @@
     }
 
     .template {
-      width: 800px;
+      width: 600px;
       margin-left: auto;
       margin-right: auto;
     }
 
-    .header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: relative;
-      margin-left: 30px;
-    }
+    .header {}
+
+    .header-left {}
 
     .logo {
       width: 100px;
     }
 
-    .header-logo {
-      position: absolute;
-      left: 0;
-      top: 20px;
-    }
+    .header-logo {}
 
     h1 {
       color: #CE9B25;
@@ -81,23 +74,15 @@
       background-color: #CE9B25;
       color: white;
       border: none;
-      font-size: 24px;
+      font-size: 18px;
       border-radius: 10px;
-      padding: 15px 30px;
+      padding: 12px 25px;
       cursor: pointer;
     }
 
-    .social {
-      display: flex;
-      gap: 30px;
-      justify-content: center;
-      margin-top: 90px;
-      margin-bottom: 50px;
-    }
+    .social {}
 
-    .social img {
-      width: 40px;
-    }
+    .social img {}
 
     .contact-wrapper {
       text-align: center;
@@ -106,10 +91,10 @@
     .contact {
       display: inline-flex;
       justify-content: center;
-      font-size: 18px;
     }
 
-    .content-explore-rest {
+
+    .content-explore {
       text-align: center;
     }
 
@@ -117,10 +102,13 @@
       color: #CE9B25;
       display: inline-block;
       display: flex;
+      font-size: 14px;
     }
 
     .contact a {
       margin-left: 5px;
+      font-size: 14px;
+
     }
 
     .contact .contact--after {
@@ -147,24 +135,38 @@
     }
 
     .footer .footer-logo {
-      position: absolute;
-      right: 15px;
-      bottom: 20px;
+      float: right;
     }
 
     .footer .footer-information {
       text-align: center;
+      font-size: 14px;
     }
   </style>
 </head>
 
 <body>
   <div class="template">
-    <div class="header">
-      <img src="./images/logo.png" alt="" class="logo header-logo">
-      <h1>BÁO CÁO KHẢO SÁT</h1>
-      <img src="./images/header-right.png" alt="" class="header-right-img">
-    </div>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%"
+      style="margin: 0; padding: 0; box-sizing: border-box;">
+      <tr>
+        <td width="50%" valign="top" style="margin: 0; padding: 0; padding-left: 8px; box-sizing: border-box;">
+          <img
+            src="https://gitlab.hivetech.vn/template-logo/revica-logo/-/raw/c5b5b97e204085827efb3ce76cd184bb58f0a18a/images/logo.png"
+            alt="" class="logo header-logo"
+            style="margin: 0; padding: 0; box-sizing: border-box; width: 100px; margin-top: 20px; margin-bottom: 52px; display: block;">
+          <h1 style="margin: 0; padding: 0; box-sizing: border-box; color: #CE9B25; font-size: 24px;">BÁO CÁO KHẢO SÁT
+          </h1>
+        </td>
+        <td width="30%" valign="top" style="margin: 0; padding: 0; box-sizing: border-box;">
+          <img
+            src="https://gitlab.hivetech.vn/template-logo/revica-logo/-/raw/c5b5b97e204085827efb3ce76cd184bb58f0a18a/images/header-right.png"
+            alt="" class="header-right-img"
+            style="margin: 0; padding: 0; box-sizing: border-box; width: 100%; display: block;">
+        </td>
+      </tr>
+    </table>
 
     <div class="content">
       <div class="dear">Kính gửi khách hàng.</div>
@@ -176,20 +178,32 @@
       </div>
       <div>Toàn bộ nội dung báo cáo của khách hàng được Revica bảo mật tuyệt đối.</div>
       <div class="content-btn-area">
-        <a href=""><button>Nhận báo cáo tại đây</button></a>
+        <a href="http://google.com"><button>Nhận báo cáo tại đây</button></a>
       </div>
-      <div class="content-explore">Tìm hiểu rõ hơn về bản thân và sử dụng thêm các dịch vụ chất lượng tại Revica</div>
-      <div class="content-explore-rest">ngay hôm
-        nay</div>
+      <div class="content-explore">Tìm hiểu rõ hơn về bản thân và sử dụng thêm các dịch vụ chất lượng tại Revica ngay
+        hôm nay</div>
+
       <div class="content-btn-area">
-        <a href=""><button>Tham khảo ngay</button></a>
+        <a href="http://google.com"><button>Tham khảo ngay</button></a>
       </div>
       <div>Revica chân thành cảm ơn quý khách!</div>
-      <div class="social">
-        <a href=""> <img src="./images/click-revica.png" alt=""></a>
-        <a href=""><img src="./images/facebook.png" alt=""></a>
-        <a href=""><img src="./images/zalo.png" alt=""></a>
-      </div>
+      <table class="social"
+        style="margin: 0;padding: 0;box-sizing: border-box;width: 100%;max-width: 240px;margin: 90px auto 50px auto;">
+        <tr style="margin: 0;padding: 0;box-sizing: border-box;">
+          <td style="margin: 0;padding: 0;box-sizing: border-box;text-align: center;"><a href=""
+              style="margin: 0;padding: 0;box-sizing: border-box;cursor: pointer;text-decoration: none;color: #CE9B25;"><img
+                src="https://gitlab.hivetech.vn/template-logo/revica-logo/-/raw/c5b5b97e204085827efb3ce76cd184bb58f0a18a/images/click-revica.png"
+                alt="" style="margin: 0;padding: 0;box-sizing: border-box;width: 40px;"></a></td>
+          <td style="margin: 0;padding: 0;box-sizing: border-box;text-align: center;"><a href=""
+              style="margin: 0;padding: 0;box-sizing: border-box;cursor: pointer;text-decoration: none;color: #CE9B25;"><img
+                src="https://gitlab.hivetech.vn/template-logo/revica-logo/-/raw/c5b5b97e204085827efb3ce76cd184bb58f0a18a/images/facebook.png"
+                alt="" style="margin: 0;padding: 0;box-sizing: border-box;width: 40px;"></a></td>
+          <td style="margin: 0;padding: 0;box-sizing: border-box;text-align: center;"><a href=""
+              style="margin: 0;padding: 0;box-sizing: border-box;cursor: pointer;text-decoration: none;color: #CE9B25;"><img
+                src="https://gitlab.hivetech.vn/template-logo/revica-logo/-/raw/c5b5b97e204085827efb3ce76cd184bb58f0a18a/images/zalo.png"
+                alt="" style="margin: 0;padding: 0;box-sizing: border-box;width: 40px;"></a></td>
+        </tr>
+      </table>
       <div class="contact-wrapper">
         <div class="contact">
           <span>Tổng đài hỗ trợ:<a href="tel:0123456789" class="contact-mobile">0 123 456 789</a> <span
@@ -203,9 +217,9 @@
 
     <div class="footer">
       <div class="footer-img">
-        <img src="./images/logo.png" class="footer-logo logo" alt="">
-        <img src="./images/footer-background.png" alt="" class="footer-img-background">
+        <img src="./images/footer.png" alt="" class="footer-img-background">
       </div>
+
       <div class="footer-information">Revica, no 98 Hoang Quoc Viet Str, Cau Giay Dist, Ha Noi, Vietnam, 0123 456 789
       </div>
     </div>
